@@ -8,6 +8,9 @@
 <body>
    
     <form action="https://formspree.io/trypuz.anastasia@gmail.com" method="POST">
+       
+        <label for="postcode">Kod pocztowy</label><br/>
+        <input type="text" name="postcode" id="postcode" title="Five letter post code" pattern="[0-9]{2}-[0-9]{3}" required><br /><br />
         
         <label for="imie">Imię:</label><br />
         <input type="text" name="imie" id="imie" required><br />
@@ -31,12 +34,17 @@
             <option value="wielkopolskie">Wielkopolskie</option>
         </select><br /><br />
         
+        <label for="miasta">Miasto</label><br />
+        <select name="miasta" id="miasta">
+            <option value="warszawa">Warszawa</option>
+            <option value="wroclaw">Wrocław</option>
+            <option value="krakow">Kraków</option>
+            <option value="gdansk">Gdańśk</option>
+        </select><br /><br />
+        
         <label for="wiadomosc">Wiadomość</label><br />
         <textarea name="wiadomosc" id="wiadomosc" cols="21" rows="4" required>
         </textarea><br />
-        
-        <label for="postcode">Kod pocztowy</label><br/>
-        <input type="number" name="postcode" id="postcode" pattern="[0-9]{2}\-[0-9]{3}" required><br /><br />
         
         <input type="submit" value="Wyślij">
         
