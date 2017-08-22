@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="https://formspree.io/trypuz.anastasia@gmail.com" method="post">
+
+        <label for="imie">Imię:</label><br />
+        <input type="text" name="imie" id="imie" size="15" required><br /><br />
+
+        <label for="nazwisko">Nazwisko:</label><br />
+        <input type="text" name="nazwisko" id="nazwisko" size="15" required><br /><br />
+
+        <label for="email">Email:</label><br />
+        <input type="email" name="email" id="email" size="15" required><br /><br />
+
+        <label for="telephone">Numer telefonu:</label><br />
+        <input type="tel" name="telephone" id="telephone" size="15" required><br /><br />
+
+        <label for="miasta">Miasto:</label><br />
+        <select name="miasta" id="miasta">
+            <option value="krakow">Kraków</option>
+            <option value="warszawa">Warszawa</option>
+            <option value="gdansko">Gdańsk</option>
+        </select><br />
+
+        <p>Płeć:
+        <br />
+                <input type="radio" name="plec" id="kobieta" value="kobieta" checked>
+                 <label for="kobieta">Kobieta</label><br />
+        
+                <input type="radio" name="plec" id="mezczyzna" value="mezczyzna">
+                <label for="mezczyzna">Mężczyzna</label>
+        </p> 
+
+        <label for="wiadomosc">Wiadomość:</label><br />
+        <textarea name="wiadomosc" id="wiadomosc" cols="57" rows="5" required></textarea><br /><br />
+
+        <input type="checkbox" name="zgoda" id="zgoda" value="zgoda">Wyrażam zgodę na przetwarzanie moich danych osobowych...
+        <br /><br />
+
+        <input type="submit" value="Wyślij">
+
+    </form>
+
+</body>
+
+</html>
