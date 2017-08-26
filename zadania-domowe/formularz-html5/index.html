@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Formularz HTML</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -29,20 +31,20 @@
            <option value="gdansko">Gdańsk</option>
         </select><br />
 
-        <p>Płeć:
-        <br />
+        <fieldset>
+            <legend id="plec">Płeć:</legend>
                 <input type="radio" name="plec" id="kobieta" value="kobieta" checked required>
-                 <label for="kobieta">Kobieta</label><br />
-        
+                <label for="kobieta">Kobieta</label><br />
+
                 <input type="radio" name="plec" id="mezczyzna" value="mezczyzna" required>
                 <label for="mezczyzna">Mężczyzna</label>
-        </p> 
-
+        </fieldset>
+        
         <label for="wiadomosc">Wiadomość:</label><br />
-        <textarea name="wiadomosc" id="wiadomosc" cols="57" rows="5" required></textarea><br /><br />
+        <textarea name="wiadomosc" id="wiadomosc" required></textarea><br /><br />
 
         <input type="checkbox" name="zgoda" id="zgoda" value="zgoda" required>
-        <label for="zgoda">Wyrażam zgodę na przetwarzanie moich danych osobowych...</label>
+        <label for="zgoda">Wyrażam zgodę na przetwarzanie moich danych osobowych</label>
         <br /><br />
 
         <input type="submit" value="Wyślij">
