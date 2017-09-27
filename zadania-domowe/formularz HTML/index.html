@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+   
+    <form action="https://formspree.io/trypuz.anastasia@gmail.com" method="POST">
+       
+        <label for="postcode">Kod pocztowy</label><br/>
+        <input type="text" name="postcode" id="postcode" title="Five letter post code" pattern="[0-9]{2}-[0-9]{3}" required><br /><br />
+        
+        <label for="imie">Imię:</label><br />
+        <input type="text" name="imie" id="imie" required><br />
+        
+        <label for="nazwisko">Nazwisko:</label><br />
+        <input type="text" name="nazwisko" id="nazwisko" required><br />
+        
+        <label for="email">Email:</label><br />
+        <input type="email" name="email" id="email" required><br />
+        
+        <label for="telephone">Numer telefonu:</label><br />
+        <input type="tel" name="telephone" id="telephone" required><br /><br />
+        
+        <label for="wojewodztwa">Województwo</label><br />
+        <select name="wojewodztwa" id="wojewodztwa">
+            <option value="mazowieckie">Mazowieckie</option>
+            <option value="malopolskie">Małopolskie</option>
+            <option value="pomorskie">Pomorskie</option>
+            <option value="lubelskie">Lubelskie</option>
+            <option value="podkarpackie">Podkarpackie</option>
+            <option value="wielkopolskie">Wielkopolskie</option>
+        </select><br /><br />
+        
+        <label for="miasta">Miasto</label><br />
+        <select name="miasta" id="miasta">
+            <option value="warszawa">Warszawa</option>
+            <option value="wroclaw">Wrocław</option>
+            <option value="krakow">Kraków</option>
+            <option value="gdansk">Gdańśk</option>
+        </select><br /><br />
+        
+        <label for="wiadomosc">Wiadomość</label><br />
+        <textarea name="wiadomosc" id="wiadomosc" cols="21" rows="4" required>
+        </textarea><br />
+        
+        <input type="submit" value="Wyślij">
+        
+    </form> 
+    
+</body>
+
+</html>

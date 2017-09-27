@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Zad2-Formularz-HTML5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>A Simple Form</h1>
+        <h2>Form Fundamentals</h2>
+    </header>
+
+    <form action="https://formspree.io/trypuz.anastasia@gmail.com" method="post" autocomplete="on">
+
+        <fieldset>
+            <legend>Customer Info</legend>
+
+            <div id="customer_info">
+
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name" autofocus required><br /><br />
+
+                <label for="telephone">Telephone:</label>
+                <input type="tel" name="telephone" id="telephone" pattern="\d{1}[\-]\d{3}[\-]\d{3}[\-]\d{4}" placeholder="Pattern: 1-234-567-8910" required><br /><br />
+
+                <label for="email">Email address:</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email address" required multiple><br /><br />
+
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Books</legend>
+
+            <div id="books">
+                <input list="books_item" name="books_item">
+                <datalist id="books_item">
+                    <option value="Book nr 1"></option>
+                    <option value="Book nr 2"></option>
+                    <option value="Book nr 3"></option>
+                    <option value="Book nr 4"></option>
+                    <option value="Book nr 5"></option>
+                </datalist>
+
+                <label for="books_quantity">Quantity (Maximum 5):</label>
+                <input type="number" name="books_quantity" id="books_quantity" min="1" max="5">
+
+            </div>
+
+        </fieldset><br />
+
+        <input type="submit" value="Submit" id="submit">
+
+    </form>
+    
+</body>
+
+</html>

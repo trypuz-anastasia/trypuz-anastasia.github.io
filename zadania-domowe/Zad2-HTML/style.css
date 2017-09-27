@@ -1,0 +1,40 @@
+body {
+    font-family: "Times New Roman", serif;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+h1 {
+    font-size: 24px;
+    color: #3f0088;
+}
+
+h2 {
+    font-size: 20px;
+    color: #b5b7e8;
+    font-style: italic;
+}
+
+fieldset {
+    width: 900px;
+    margin-top: 10px;
+    padding: 10px 5px 15px 5px;
+}
+
+#customer_info, #books {
+    margin-left: 40px;
+}
+
+input:not(#submit) {
+    width: 300px;
+}
+
+input#books_quantity {
+    width: 150px;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    opacity: 1;
+}

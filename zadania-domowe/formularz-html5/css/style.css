@@ -1,0 +1,74 @@
+form {
+    background-color: #213b50;
+    width: 700px;
+    padding: 10px;
+    color: white;
+}
+
+input, select, textarea {
+    background-color: #2b4a64;
+}
+
+label, input:not([type=submit]):not([type=radio]):not([type=checkbox]), select {
+    width: 300px;
+    height: 20px;
+    border: 0;
+}
+
+input:focus {
+    background-color: #4e708c;
+    outline: none;
+}
+
+input, select {
+    margin: 5px 10px 5px 10px;
+}
+
+label {
+    margin-left: 10px;
+}
+
+select {
+    color: white;
+}
+
+
+fieldset {
+    border: 0;
+    padding: 0;
+    margin: 5px 0 20px 10px;
+}
+
+textarea {
+    margin-left: 10px;
+    width: 400px;
+    height: 40px;
+}
+
+textarea:focus {
+    background-color: #4e708c;
+}
+
+label[for=wiadomosc] {
+    margin: 0 0 3px 10px;
+}
+
+input[type=checkbox] {
+    margin: 0 0 0 10px;
+}
+
+label[for=zgoda] {
+    margin: 0;
+}
+
+input[type=submit] {
+    width: 80px;
+    height: 40px;
+    background-color: limegreen;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+

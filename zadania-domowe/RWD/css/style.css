@@ -1,0 +1,80 @@
+/*General*/
+
+body {
+    margin: 0;
+    color: white;
+    font-family: 'Verdana', sans-serif;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+div#background {
+    height: 100%;
+    width: 100%;
+    background: url('../obrazy/man-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*Więcej, niż 1170px*/
+
+@media (min-width: 1170px) {
+    
+    div#header-text {
+        position: absolute;
+        bottom: 50%;
+        transform: translateY(50%);
+        left: 0;
+        text-transform: uppercase;
+        margin-left: 35px;
+    }
+    
+}
+
+/*Więcej, niż 992px*/
+
+@media (min-width: 992px) and (max-width: 1170px) {
+    
+    
+    div#background {
+        background: url('../obrazy/man-2.jpg');
+        width: 100%;
+        height: 70%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 5% 20%;
+    }
+    
+    div#header-text {
+        position: absolute;
+        right: 2%;
+        top: 2%;
+        text-transform: uppercase;
+    }
+}
+
+/*Mniej, niż 992px*/
+
+@media (max-width: 992px) {
+    
+    div#background {
+        width: 100%;
+        height: 50%;
+    }
+    
+    div#header-text {
+        position: absolute;
+        color: black;
+        text-align: center;
+        width: 100%;
+        text-transform: uppercase;
+    }
+    
+    h1, h2 {
+        margin: 0;
+    }
+}
