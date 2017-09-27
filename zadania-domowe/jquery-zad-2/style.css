@@ -1,0 +1,23 @@
+div#kwadrat {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    margin-top: 20px;
+    position: relative;
+}
+
+h2 {
+    font-size: 100%;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+}
+
+div#outer {
+    margin: 30px;
+}
+
