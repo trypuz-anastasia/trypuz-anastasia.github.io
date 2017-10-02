@@ -7,155 +7,102 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://use.fontawesome.com/a6ad6e3634.js"></script>
 </head>
 
 <body>
 
-    <nav id="menu">
-        <ul>
-            <li class="menu-item"><a href="">o mnie</a></li>
-            <li class="menu-item"><a href="">umiejetnosci</a></li>
-            <li class="menu-item"><a href="">portfolio</a></li>
-            <li class="menu-item"><a href="">kontakt</a></li>
-        </ul>
+    <!--menu -->
+    <nav class="navbar navbar-default navbar-fixed-top" id="main-nav">
+        <div class="container" id="main-nav-container">
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                <ul class="nav navbar-nav navbar-right bold">
+                    <li><a href="#services">o mnie</a></li>
+                    <li><a href="#portfolio">umiejetności</a></li>
+                    <li><a href="#team">portfolio</a></li>
+                    <li><a href="#contact">kontakt</a></li>
+                </ul>
+
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
     </nav>
 
-    <header>
+<!--Sekcja header-->
 
-        <h1 id="header-title">Jan <span id="nazwisko">Nowak</span></h1>
-        <h2 id="header-description">Front-End Developer</h2>
-
-    </header>
-
-    <section id="main-block">
-
-        <article id="about">
-
-            <h3 id="about-header">O <span id="mnie">mnie</span></h3>
-
-            <img src="img/jan-nowak.jpg" alt="jan-nowak" id="jan-nowak">
-
-            <p id="o-mnie">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus tempore vero aliquid provident, aspernatur et adipisci eos sapiente impedit ratione recusandae possimus natus quia, est magni deleniti minima nobis reprehenderit in, quisquam architecto amet consequatur. Explicabo nobis eius vel suscipit architecto quod accusamus quo dolorum mollitia sunt id, tempora sed facilis odit optio pariatur, neque minima deleniti soluta consequuntur rem velit ut enim? Vero quis enim porro minima pariatur magni ducimus, quisquam ex aperiam facere quos! Recusandae inventore repudiandae iusto.</p>
-
-        </article>
-
-        <article id="umiejetnosci">
-
-            <h3 id="umiejetnosci-header">Moje <span id="umiejentnosci-green">umiejętności</span></h3>
-            <p id="moje-umiejetnosci">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique numquam voluptatum, dolore. Vel, quis ratione! Eaque, in? Obcaecati quae eos molestias assumenda, sit. Accusamus soluta, sit natus, distinctio excepturi possimus, quidem ut iusto ex fugit quaerat minus esse vel enim!</p>
-
-            <figure>
-                <img src="icons/html5.png" alt="HTML5" class="portfolio-icons">
-                <figcaption class="=caption-icons">HTML5</figcaption>
-            </figure>
-
-            <figure>
-                <img src="icons/css3.png" alt="CSS3" class="portfolio-icons">
-                <figcaption class="caption-icons">CSS3</figcaption>
-            </figure>
-
-            <figure>
-                <img src="icons/js.png" alt="JavaScript" class="portfolio-icons">
-                <figcaption class="caption-class">JavaScript</figcaption>
-            </figure>
-
-            <figure>
-                <img src="icons/jquery.png" alt="jQuery" class="portfolio-icons">
-                <figcaption class="caption-icons">JQuery</figcaption>
-            </figure>
-
-        </article>
-
-        <article id="portfolio">
-           
-            <h3 id="moje-portfolio">Moje <span id="portfolio-green">portfolio</span></h3>
-            
-        <div id="portfolio-examples">
-          
-           <figure id="port-1" class="img-port">
-                <img src="img/portfolio1.jpg" alt="portfolio1" class="portfolio-img">
-            </figure>
-            
-            <div id="overlay">
-               
-                <figure id="port-2" class="img-port">
-                    <img src="img/portfolio2.jpg" alt="portfolio2" class="portfolio-img" id="img-overlay">
-                </figure>
-                <div id="text-overlay">
-                    <div id="lorem-ipsum-overlay">
-                        <h3 id="lorem">Lorem Ipsum</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis eum ex omnis magni in, aperiam porro? Provident magni laborum, sapiente.</p>
-                        <p>Wykorzystane technologie:</p>
-                        <p>HTML5, CSS3, RWD, Bootstrap, JavaScript, JQuery</p>
-                        <i class="fa fa-link fa-2x" aria-hidden="true"></i>
-                    </div>
-                </div>
-            </div>
-            
-                
-            
-            <figure id="port-4" class="img-port">
-                <img src="img/portfolio4.jpg" alt="portfolio4" class="portfolio-img">   
-            </figure>
-            
+<header class="text-center" id="main-header">
+        <div class="inner-header">
+            <h1>Jan <span class="zielony-naglowek">Nowak</span></h1>
+            <h3>Front-End Developer</h3>
         </div>
-            
-        </article>
+</header>
 
-        <article id="contact">
 
-            <div id="address-info">
+<!--    Sekcja o mnie-->
+   
+<section id="sekcja-o-mnie">
+    <div class="inner">
+        <div class="section-header text-center">O <span class="zielony-naglowek">mnie</span></div>
+    </div>
 
-                <p id="jan-nowak-kontakt">Jan <span id="nazwisko-kontakt">Nowak</span></p>
+    <div class="container" id="container-o-mnie">
 
-                <div id="ulica-miasto">
-                    ul. Mostowa 6/13
-                    <br /> 31-061 Kraków
-                </div>
-                <div id="tel-email">
-                    tel. 60674575
-                    <br />
-                    <a href="mailto:example@example.com">email: <span id="email-link">example@example.com</span></a>
-                </div>
-                
-                <div id="icons">
-                    <div class="social-icon">
-                        <i class="fa fa-facebook fa-lg" aria-hidden="true"></i>
-                    </div>
-                    <div class="social-icon">
-                        <i class="fa fa-google-plus fa-lg" aria-hidden="true"></i>
-                    </div>
-                    <div class="social-icon">
-                        <i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
-                    </div>
-                    <div class="social-icon">
-                        <i class="fa fa-linkedin fa-lg" aria-hidden="true"></i>
-                    </div>
-                </div>
-                
+        <div class="row">
+
+            <div class="col-lg-6">
+                <div id="my-img"></div>
             </div>
 
-            <form action="" method="post">
+            <div class="col-lg-6">
+                <p id="opis-o-mnie">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus tempore vero aliquid provident, aspernatur et adipisci eos sapiente impedit ratione recusandae possimus natus quia, est magni deleniti minima nobis reprehenderit in, quisquam architecto amet consequatur. Explicabo nobis eius vel suscipit architecto quod accusamus quo dolorum mollitia sunt id, tempora sed facilis odit optio pariatur, neque minima deleniti soluta consequuntur rem velit ut enim? Vero quis enim porro minima pariatur magni ducimus, quisquam ex aperiam facere quos! Recusandae inventore repudiandae iusto.</p>
+            </div>
 
-                <label for="imie-nazwisko"></label>
-                <input type="text" name="imie-nazwisko" id="imie-nazwisko" placeholder="Imię i nazwisko"><br />
+        </div>
+    </div>
+</section>
 
-                <label for="email"></label>
-                <input type="email" name="email" id="email" placeholder="Email"><br />
+   
+<!--    Sekcja portfolio-->
+   
+<section id="umiejetnosci">
+    <div class="inner text-center">
+        <div class="section-header">Moje <span class="zielony-naglowek">umiejętności</span></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam quae, quasi fugiat ratione dolor eligendi quibusdam perferendis sed doloribus, quam. Vitae quia, minus voluptates amet maxime minima debitis dolores. Odit numquam quia iusto deleniti labore.</p>
+    </div>
 
-                <label for="wiadomosc"></label>
-                <textarea name="wiadomosc" id="wiadomosc" cols="30" rows="10" placeholder="Treść wiadomości"></textarea><br />
+    <div class="container" id="container-umiejetnosci">
 
-                <input type="submit" value="Wyślij">
-            </form>
-        </article>
+        <div class="row text-center">
 
-        <footer>
-            Copyright &copy; Jan Nowak
-        </footer>
+            <div class="col-lg-3">
+                <div class="umiejetnosci-item" id="umiejetnosci-item-1"></div>
+                <p class="umiejetnosci-item-header">HTML5</p>
+            </div>
+            
+            <div class="col-lg-3">
+                <div class="umiejetnosci-item" id="umiejetnosci-item-2"></div>
+                <p class="umiejetnosci-item-header">HTML5</p>
+            </div>
+            
+            <div class="col-lg-3">
+                <div class="umiejetnosci-item" id="umiejetnosci-item-3"></div>
+                <p class="umiejetnosci-item-header">HTML5</p>
+            </div>
+            
+            <div class="col-lg-3">
+                <div class="umiejetnosci-item" id="umiejetnosci-item-4"></div>
+                <p class="umiejetnosci-item-header">HTML5</p>
+            </div>
 
-    </section>
+        </div>
+    </div>
+</section>
+
 
 </body>
 
