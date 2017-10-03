@@ -1,36 +1,56 @@
-* {
-    font-family: 'Lato';
-    color: #291f1a;
+/* General */
+
+body {
+    font-family: 'Lato', sans-serif;
 }
 
-.zielony-naglowek {
+.additional-font {
     color: #1ac056;
 }
 
-/*Nawigacja*/
+.section-header {
+    font-size: 32px;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 30px;
+    color: black;
+}
+
+
+/* Nawigacja */
 
 #main-nav {
     background-color: transparent;
     border: none;
     padding-top: 15px;
 }
+#main-nav-container {
+    margin-right: 0;
+}
 
-.navbar.navbar-default.navbar-fixed-top ul li a {
+.navbar.navbar-default ul li {
+    margin-left: 30px;
+}
+
+.navbar.navbar-default ul li a {
     color: #fff;
     font-size: 16px;
 }
 
-/*Header*/
+.navbar.navbar-default ul li a:hover {
+    color: #1ac056;
+}
 
-#main-header {
+/* Header */
+
+#header {
     background-image: url('../img/header-background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 600px;
+    height: 100vh;
     position: relative;
 }
 
-.inner-header {
+.header-text {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -38,24 +58,24 @@
     color: #fff;
 }
 
-.inner-header > h1 {
+.header-text {
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-text > h1 {
     font-size: 120px;
 }
 
-.inner-header > h3 {
+.header-text > h3 {
     font-size: 40px;
 }
 
-/*Article - About*/
+/* Sekcja - O mnie */
 
-.section-header {
-    font-size: 32px;
-    padding-top: 30px;
-    color: black;
-}
-
-#sekcja-o-mnie {
+#o-mnie {
     background-color: #f9fcfe;
+    box-shadow: 0px 1px 15px -5px rgba(0, 0, 0, 0.88);
+    padding-bottom: 80px;
 }
 
 #container-o-mnie {
@@ -64,8 +84,10 @@
 
 #my-img {
     background-image: url('../img/jan-nowak.jpg');
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
+    border: 15px solid #fff;
+    border-radius: 10px;
     height: 300px;
     width: 250px;
     margin: 0 auto;
@@ -73,17 +95,29 @@
 
 #opis-o-mnie {
     line-height: 25px;
+    font-family: 'Lato', sans-serif;
+    color: rgba(41, 31, 26, 0.88);
 }
 
 
-/*Portolio*/
+/* Sekcja - umiejetnosci */
 
 #umiejetnosci {
     margin: 0 100px;
+    font-family: 'Lato', sans-serif;
+    padding: 30px 0 80px 0;
 }
 
+.inner-umiejetnosci > p {
+    padding: 20px 0 10px 0;
+}
 
-.umiejetnosci-item {
+#container-width {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.umiejetnosci-items {
     background-repeat: no-repeat;
     height: 100px;
     background-position: center;
@@ -103,5 +137,180 @@
 
 #umiejetnosci-item-4 {
     background-image: url('../icons/jquery.png');
+}
+
+
+/*Sekcja - portfolio*/
+
+#portfolio {
+    padding-bottom: 80px;
+}
+
+#item-container {
+    height: 350px;
+}
+
+#portfolio-header {
+    padding-bottom: 30px;
+}
+
+.row.no-gutter [class*='col-']:not(:first-child):not(:last-child) {
+  padding-right:0;
+  padding-left:0;
+}
+
+.row.no-gutter [class*='col-']:first-child {
+  padding-right:0;
+}
+
+.row.no-gutter [class*='col-']:last-child {
+  padding-left:0;
+}
+
+.item {
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+}
+
+#portfolio-item-1 {
+    background-image: url('../img/portfolio1.jpg');
+}
+
+#portfolio-item-2 {
+    background-image: url('../img/portfolio2.jpg');
+}
+
+#portfolio-item-2:hover .overlay {
+    opacity: 1;
+}
+
+#portfolio-item-3 {
+    background-image: url('../img/portfolio3.jpg');
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(33, 59, 80, 0.75);
+    padding: 10px;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+.overlay-text {
+    color: #fff;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #fff;
+    height: 100%;
+    width: auto;
+    padding: 5px;
+}
+
+#portfolio-icon > .fa {
+    font-size: 30px;
+}
+
+#text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    font-family: 'Lato', sans-serif;
+}
+
+
+/* Sekcja - kontakt */
+
+#contact {
+    background-color: #213b50;
+    padding-bottom: 40px;
+}
+
+#contact-header {
+    color: #fff;
+}
+
+#contact-info {
+    color: #fff;
+    margin-top: 60px;
+}
+
+#contact-text {
+    font-size: 15px;
+    padding-bottom: 50px;
+    font-family: 'Lato', sans-serif;
+}
+
+.icon {
+    border: 1px solid #fff;
+    display: inline-block;
+    font-size: 24px;
+    height: 40px;
+    width: 40px;
+    margin-right: 25px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.icon:hover {
+    color: #1ac056;
+    border: 1px solid #1ac056;
+}
+
+input:not([type="submit"]), textarea {
+    display: block;
+    background-color: rgb(53, 86, 114);
+    border: none;
+    width: 100%;
+    margin: 10px 0;
+    height: 45px;
+    color: #fff;
+    padding: 10px;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #b9b9b9;
+}
+
+#textarea {
+    color: #fff;
+    height: 90px; 
+}
+
+input[type="submit"] {
+    float: right;
+    margin: 10px 0;
+    height: 40px;
+    width: 100px;
+    display: block;
+    background-color: #1ac056;
+    color: #fff;
+    border: 1px solid #fff;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: #fff;
+    color: #1ac056;
+}
+
+
+/* Footer */
+
+#copyright-section {
+    background-color: #13202a;
+    color: #fff;
+    height: 30px;
+    line-height: 30px;
+    font-size: 15px;
+}
+
+#copyright {
+   font-family: 'Open Sans', sans-serif;
 }
 

@@ -3,107 +3,261 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Projekt-portfolio</title>
+    <title>Projekt portfolio</title>
+    
+<!--    CSS | Bootstrap -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    
+<!--    Fonts Google -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Roboto" rel="stylesheet">
+<!--    Font Awesome-->
     <script src="https://use.fontawesome.com/a6ad6e3634.js"></script>
 </head>
 
 <body>
 
-    <!--menu -->
+    <!-- Menu -->
+    
     <nav class="navbar navbar-default navbar-fixed-top" id="main-nav">
-        <div class="container" id="main-nav-container">
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
+       
+        <div class="container text-right" id="main-nav-container">
+           
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
                 <ul class="nav navbar-nav navbar-right bold">
-                    <li><a href="#services">o mnie</a></li>
-                    <li><a href="#portfolio">umiejetności</a></li>
-                    <li><a href="#team">portfolio</a></li>
+                    <li><a href="#o-mnie">o mnie</a></li>
+                    <li><a href="#umiejetnosci">umiejetności</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
                     <li><a href="#contact">kontakt</a></li>
                 </ul>
-
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
+                
+            </div>  
+            
+        </div>   
     </nav>
 
-<!--Sekcja header-->
-
-<header class="text-center" id="main-header">
-        <div class="inner-header">
-            <h1>Jan <span class="zielony-naglowek">Nowak</span></h1>
+    <!-- Sekcja header -->
+    
+    <header class="text-center" id="header">
+       
+        <div class="header-text">
+           
+            <h1>Jan <span class="additional-font">Nowak</span></h1>
             <h3>Front-End Developer</h3>
+            
         </div>
-</header>
+        
+    </header>
 
 
-<!--    Sekcja o mnie-->
-   
-<section id="sekcja-o-mnie">
-    <div class="inner">
-        <div class="section-header text-center">O <span class="zielony-naglowek">mnie</span></div>
-    </div>
+    <!--    Sekcja o mnie-->
+    
+    <section id="o-mnie">
 
-    <div class="container" id="container-o-mnie">
+        <div class="section-header text-center">
+            O <span class="additional-font">mnie</span>
+        </div>
 
-        <div class="row">
+        <div class="container" id="container-o-mnie">
 
-            <div class="col-lg-6">
-                <div id="my-img"></div>
+            <div class="row">
+
+                <div class="col-lg-6">
+                    <div id="my-img"></div>
+                </div>
+
+                <div class="col-lg-6">
+                    <p id="opis-o-mnie">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus tempore vero aliquid provident, aspernatur et adipisci eos sapiente impedit ratione recusandae possimus natus quia, est magni deleniti minima nobis reprehenderit in, quisquam architecto amet consequatur. Explicabo nobis eius vel suscipit architecto quod accusamus quo dolorum mollitia sunt id, tempora sed facilis odit optio pariatur, neque minima deleniti soluta consequuntur rem velit ut enim? Vero quis enim porro minima pariatur magni ducimus, quisquam ex aperiam facere quos! Recusandae inventore repudiandae iusto.</p>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <!--    Sekcja umiejetnosci -->
+
+    <section id="umiejetnosci">
+
+        <div class="inner-umiejetnosci text-center">
+            <div class="section-header">
+                Moje <span class="additional-font">umiejętności</span>
             </div>
 
-            <div class="col-lg-6">
-                <p id="opis-o-mnie">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus tempore vero aliquid provident, aspernatur et adipisci eos sapiente impedit ratione recusandae possimus natus quia, est magni deleniti minima nobis reprehenderit in, quisquam architecto amet consequatur. Explicabo nobis eius vel suscipit architecto quod accusamus quo dolorum mollitia sunt id, tempora sed facilis odit optio pariatur, neque minima deleniti soluta consequuntur rem velit ut enim? Vero quis enim porro minima pariatur magni ducimus, quisquam ex aperiam facere quos! Recusandae inventore repudiandae iusto.</p>
-            </div>
-
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam quae, quasi fugiat ratione dolor eligendi quibusdam perferendis sed doloribus, quam. Vitae quia, minus voluptates amet maxime minima debitis dolores. Odit numquam quia iusto deleniti labore.</p>
         </div>
-    </div>
-</section>
 
-   
-<!--    Sekcja portfolio-->
-   
-<section id="umiejetnosci">
-    <div class="inner text-center">
-        <div class="section-header">Moje <span class="zielony-naglowek">umiejętności</span></div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam quae, quasi fugiat ratione dolor eligendi quibusdam perferendis sed doloribus, quam. Vitae quia, minus voluptates amet maxime minima debitis dolores. Odit numquam quia iusto deleniti labore.</p>
-    </div>
+        <div class="container" id="container-umiejetnosci">
 
-    <div class="container" id="container-umiejetnosci">
+            <div class="row text-center">
+               
+                <div id="container-width">
+                   
+                    <div class="col-lg-3">
+                        <div class="umiejetnosci-items" id="umiejetnosci-item-1"></div>
+                        <p class="umiejetnosci-item-header">HTML5</p>
+                    </div>
 
-        <div class="row text-center">
+                    <div class="col-lg-3">
+                        <div class="umiejetnosci-items" id="umiejetnosci-item-2"></div>
+                        <p class="umiejetnosci-item-header">HTML5</p>
+                    </div>
 
-            <div class="col-lg-3">
-                <div class="umiejetnosci-item" id="umiejetnosci-item-1"></div>
-                <p class="umiejetnosci-item-header">HTML5</p>
+                    <div class="col-lg-3">
+                        <div class="umiejetnosci-items" id="umiejetnosci-item-3"></div>
+                        <p class="umiejetnosci-item-header">HTML5</p>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="umiejetnosci-items" id="umiejetnosci-item-4"></div>
+                        <p class="umiejetnosci-item-header">HTML5</p>
+                    </div>
+                    
+                </div>
+                
             </div>
             
-            <div class="col-lg-3">
-                <div class="umiejetnosci-item" id="umiejetnosci-item-2"></div>
-                <p class="umiejetnosci-item-header">HTML5</p>
+        </div>
+        
+    </section>
+
+
+<!-- Sekcja portfolio -->
+   
+    <section id="portfolio">
+    
+        <div class="inner-umiejetnosci text-center">
+            <div class="section-header" id="portfolio-header">
+                Moje <span class="additional-font">portfolio</span>
             </div>
             
-            <div class="col-lg-3">
-                <div class="umiejetnosci-item" id="umiejetnosci-item-3"></div>
-                <p class="umiejetnosci-item-header">HTML5</p>
+            <div class="container">
+               
+                <div class="row no-gutter">
+                
+                    <div class="col-lg-4">
+                        <div class="item" id="portfolio-item-1"></div>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <div class="item" id="portfolio-item-2">
+                            <div class="overlay">
+                                <div class="overlay-text">
+                                   <div id="text">
+                                    <h3>Lorem ipsum</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis consectetur perferendis unde sequi fugiat, molestias.
+                                    </p>
+                                    
+                                    <h4>
+                                        Wykorzystane technologie:
+                                    </h4>
+                                    <p>
+                                        HTML5, CSS3, RWD, Bootstrap, JavaScript, JQuery
+                                    </p>
+                                    <div id="portfolio-icon">
+                                        <i class="fa fa-link" aria-hidden="true"></i>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <div class="item" id="portfolio-item-3"></div>
+                    </div>
+                    
+                </div>
+                
             </div>
-            
-            <div class="col-lg-3">
-                <div class="umiejetnosci-item" id="umiejetnosci-item-4"></div>
-                <p class="umiejetnosci-item-header">HTML5</p>
+        </div>
+    </section>
+   
+   
+   
+<!-- Sekcja kontakt -->
+   
+    <section id="contact">
+
+        <div class="container" id="portfolio-container">
+
+            <div class="row">
+                <div class="col-lg-12 text-left">
+                    <div class="section-header" id="contact-header">
+                    Jan <span class="additional-font">Nowak</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-lg-6">
+                    <div id="contact-info">
+                        <div id="contact-text">
+                            <p>
+                                ul. Mostowa 6/13 <br /> 31-061 Kraków
+                            </p>
+
+                            <p>
+                                tel: 606 74 57 59 <br /> e-mail: 
+                                <a href="mailto:example@example.com">
+                                    <span class="additional-font">example@example.pl</span>
+                                </a> 
+                            </p>
+                        </div>
+
+                        <div id="contact-icons">
+                            <div class="icon">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </div>
+                            <div class="icon">
+                                <i class="fa fa-google-plus" aria-hidden="true"></i>
+                            </div>
+                            <div class="icon">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </div>
+                            <div class="icon">
+                                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div id="formularz">
+                        <form action="">
+                            <input type="text" name="imie-nazwisko" placeholder="Imię i nazwisko">
+                            <input type="email" name="email" placeholder="E-mail">
+                            <textarea name="wiadomosc" placeholder="Treść wiadomości" id="textarea"></textarea>
+                            <input type="submit" value="Wyślij">
+                        </form>
+                    </div>
+                </div>
+                
             </div>
 
         </div>
-    </div>
-</section>
+    </section>
 
-
+<!--   Footer -->
+   
+    <footer id="copyright-section">
+      
+        <div class="container">
+            <div class="row">
+               <div class="col-lg-12 text-left">
+                   <div id="copyright">
+                    Copyright &copy; Jan Nowak
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+    
 </body>
-
 </html>
