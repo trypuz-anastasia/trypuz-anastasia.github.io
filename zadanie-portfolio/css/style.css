@@ -15,14 +15,43 @@ body {
     color: black;
 }
 
+/* Back To Top button */
+
+.scrollToTop {
+    height: 40px;
+    width: 40px;
+    background-color: rgba(26, 192, 86, 0.8);
+    border-radius: 50%;
+    font-size: 25px;
+    text-align: center;
+    color: #fff;
+    position: fixed;
+    right: 30px;
+    bottom: 60px;
+}
+
+.scrollToTop:hover {
+    color: #1ac056;
+    background-color: #fff;
+}
+
 
 /* Nawigacja */
 
 #main-nav {
     background-color: transparent;
     border: none;
-    padding-top: 15px;
 }
+
+#main-nav.scrolled {
+    background-color: rgba(26, 192, 86, 0.76);
+}
+
+#main-nav.scrolled ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
 #main-nav-container {
     margin-right: 0;
 }
