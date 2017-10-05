@@ -1,0 +1,48 @@
+@import "mixin";
+@import "zmienne";
+
+#services {
+    margin: 100px 0 100px 0;
+    
+    h2 {
+        color: $header-font-color;
+        @include bold-font;
+    }
+    
+    > p {
+        color: $additional-font-color;
+        @include cursive-font;
+    }
+    
+    .container {
+        
+        #service-items {
+            margin: 50px 0 50px 0;
+            
+            .width-row {
+                width: 75%;
+                margin: 0 auto;
+                
+                h4 {
+                    @include bold-font;
+                    color: $header-font-color;
+                }
+
+                p {
+                    color: $additional-font-color;   
+                }
+
+                .fa {
+                    @include icons;
+                }
+
+                .fa:hover {
+                    @include icons-hover;
+                }
+            }
+        }
+    }
+}
+
+
+

@@ -1,0 +1,37 @@
+@import "mixin";
+@import "zmienne";
+
+#header {
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.5), 
+      rgba(0, 0, 0, 0.5)
+    ), url("../img/header/pictures_on_the_wall.jpg");
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    
+    #header-caption {
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        
+        h3 {
+            @include cursive-font;
+        }
+        
+        h1 {
+            @include bold-font;
+        }
+        
+        button {
+            @include button;
+        }
+
+        button:hover {
+            @include button-hover;
+        }
+    }
+}

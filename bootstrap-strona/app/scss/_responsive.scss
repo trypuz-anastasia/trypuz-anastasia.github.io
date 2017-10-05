@@ -1,0 +1,49 @@
+@media all and (min-width: 425px) and (max-width: 768px) {
+    
+    .team-element {
+        margin-bottom: 30px;
+    }
+    
+    .site-rules {
+                margin-top: 5px;
+    }
+}
+
+@media all and (max-width: 425px) and (min-width: 365px) {
+    
+    #portfolio .width-row {
+        width: 100%;
+    }
+    
+    #team #container-team .width-row {
+        width: 100%;
+    }
+
+}
+
+@media all and (max-width: 365px) {
+    
+    #portfolio .width-row {
+        width: 100%;
+    }
+    
+    #portfolio > h2 {
+        font-size: 25px;
+    }
+    
+    #team #container-team .width-row {
+        width: 100%;
+    }
+    
+    #team #container-team .width-row .fa {
+        height: 20px;
+        width: 20px;
+        font-size: 10px;
+        text-align: center;
+        line-height: 20px;
+    }
+    
+    #bottom #row-bottom .width-row #privacy-policy {
+        margin-right: 0;
+    }
+}

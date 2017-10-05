@@ -1,0 +1,66 @@
+@import "mixin";
+@import "zmienne";
+
+#team {
+    height: auto;
+    padding: 100px;
+    
+    h2 {
+       @include bold-font;
+        color: $header-font-color;
+    }
+    
+    p.header {
+        @include cursive-font;
+        color: $additional-font-color;
+    }
+    
+    #container-team {
+        margin: 50px 0 50px 0;
+        
+        .width-row {
+            width: 75%;
+            margin: 0 auto;
+            
+            img {
+                height: auto;
+                width: 100%;
+                border-radius: 50%;
+                margin: 0 auto;
+            }
+
+            #team-photo-1 {
+                background-image: url("../img/team/man-1.jpg");
+            }
+
+            #team-photo-2 {
+                background-image: url("../img/team/man-2.jpg");
+            }
+
+            #team-photo-3 {
+                background-image: url("../img/team/woman-1.jpg");
+            }
+
+            h4 {
+                @include bold-font;
+                color: $header-font-color;
+            }
+
+            p {
+                color: $additional-font-color;
+            }
+
+            .fa {
+                @include social-media-icon;
+            }
+
+            .fa:hover {
+                @include social-media-icon-hover
+            }
+        }
+    }
+    
+    p {
+        color: $additional-font-color;
+    }
+}

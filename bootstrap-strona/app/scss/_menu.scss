@@ -1,0 +1,39 @@
+@import "mixin";
+@import "zmienne";
+
+#main-nav {
+    background-color: transparent;
+    border: none;
+    
+    .width-row {
+        width: 85%;
+        margin: 0 auto;
+    }
+    
+    a {
+        color: $base-color;
+    }
+
+    a:not(#logo):hover {
+        color: $additional-color;
+    } 
+    
+    #logo {
+        @include cursive-font;
+    }
+    
+    li > a {
+        @include bold-font;
+    } 
+}
+
+#main-nav.scrolled {
+        background-color: $additional-color;
+        transition: 1s;
+        margin: 0;
+    }
+
+#main-nav.scrolled a:not(#logo):hover {
+        color: $base-color;
+    text-decoration: underline;
+    }

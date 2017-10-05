@@ -18,9 +18,10 @@ function smoothScroll() {
     $(".nav-section").click( function() {
     
         var linkHref = $(this).attr('href');
+        var navHeight = $('#main-nav').outerHeight();
         
         $('html, body').animate( {
-            scrollTop: $(linkHref).offset().top
+            scrollTop: $(linkHref).offset().top - navHeight
         }, 500);
     });
 
@@ -29,10 +30,10 @@ function smoothScroll() {
 //New Class for navigation during scroll
 function scrollMenu() {
     
-    var menuHeight = $('#main-nav').height();
+    var headerHeight = $('#header').height();
     var scrolled = $(window).scrollTop();
     
-    if(scrolled >= menuHeight) {
+    if(scrolled >= headerHeight) {
         $('#main-nav').addClass('scrolled');
     } else {
         $('#main-nav').removeClass('scrolled');

@@ -1,0 +1,98 @@
+@import "mixin";
+@import "zmienne";
+
+#portfolio {
+    background-color: #f7f7f7;
+    padding: 80px;
+    
+    h2 {
+        @include bold-font;
+        color: $header-font-color;
+    }
+    
+    p {
+        @include cursive-font;
+        color: $additional-font-color;
+    }
+    
+    .row {
+        margin-top: 40px;
+    }
+    
+    .width-row {
+        width: 80%;
+        margin: 0 auto;
+        
+        .single-portfolio-item {
+            background-color: $base-color;
+            margin-bottom: 20px;
+            
+            .portfolio-image-container {
+                height: 220px;
+                overflow: hidden;
+                
+                .portfolio-image {
+                    height: 100%;
+                    background-size: cover;
+                    background-position: center;
+                    transition: all 0.4s;
+                }
+                .overlay {
+                    background-color: $overlay-color;
+                    height: 100%;
+                    opacity: 0;
+                    transition: all 0.4s;
+                    position: relative;
+                    
+                    .fa {
+                        color: $base-color;
+                        font-size: 3em;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+                
+                .portfolio-image:hover {
+                    transform: scale(1.2);
+                }
+                
+                .portfolio-image:hover .overlay {
+                        opacity: 1;
+                }
+                
+                #portfolio-item-1 {
+                    background-image: url('../img/portfolio/chestnut_on_bracket.jpg');
+                }
+                #portfolio-item-2 {
+                    background-image: url('../img/portfolio/typing_on_laptop.jpg');
+                }
+                #portfolio-item-3 {
+                    background-image: url('../img/portfolio/child_with_blue_paint.jpg');
+                }
+                #portfolio-item-4 {
+                    background-image: url('../img/portfolio/chaotic_paint.jpg');
+                }
+                #portfolio-item-5 {
+                    background-image: url('../img/portfolio/house_with_blue_doors.jpg');
+                }
+                #portfolio-item-6 {
+                    background-image: url('../img/portfolio/box_of_cookies.jpg');
+                }
+            }
+            .portfolio-image-container-caption {
+                padding: 5px;
+                
+                h4 {
+                    @include bold-font;
+                    color: $header-font-color;
+                }
+                
+                p {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,64 @@
+@import "zmienne";
+
+@mixin cursive-font {
+    font-family: $cursive-font;
+    font-style: italic;
+}
+
+@mixin bold-font {
+    font-family: $additional-font;
+    font-weight: bold;
+}
+
+@mixin button {
+    background-color: $additional-color;
+    padding: 8px 15px;
+    border: solid $additional-color;
+    border-radius: 5px;
+    @include bold-font;
+}
+
+@mixin button-hover {
+    background-color: $base-color;
+    color: $additional-color;
+    border: solid $base-color;
+}
+
+@mixin section-header {
+    color: $additional-font-color;
+    
+}
+
+@mixin icons {
+    width: 60px;
+    height: 60px;
+    background-color: $additional-color;
+    border-radius: 50%;
+    color: $base-color;
+    line-height: 60px;
+    font-size: 2em;
+    border: 1px solid $additional-color;
+    transition: all 0.4s;
+}
+
+@mixin icons-hover {
+    background-color: $base-color;
+    color: $additional-color;
+    transform: rotate(360deg);
+}
+
+@mixin social-media-icon {
+    display: inline-block;
+    text-align: center;
+    margin: 5px;
+    background-color: $icons-color;
+    color: white;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+}
+
+@mixin social-media-icon-hover {
+    background-color: $additional-color;
+}

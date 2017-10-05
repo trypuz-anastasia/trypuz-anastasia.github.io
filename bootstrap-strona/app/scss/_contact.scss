@@ -1,0 +1,62 @@
+@import "mixin";
+@import "zmienne";
+
+#contact {
+    background: linear-gradient(
+      rgba(3, 3, 3, 0.5), 
+      rgba(3, 3, 3, 0.5)
+    ), url("../img/footer/world-map.jpg");
+    height: auto;
+    padding: 100px 0 100px 0;
+    background-size: cover;
+//    width: 100%;
+    margin: 0 auto;
+    
+    h2 {
+        @include bold-font;
+        color: $base-color;
+    }
+    
+    p {
+        @include cursive-font;
+        color: $base-color;
+    }
+    
+    .width-row {
+        width: 75%;
+        margin: 0 auto;
+        
+        form {
+            display: block;
+        }
+
+        input[type="submit"] {
+            @include button;
+        }
+        
+        input[type="submit"]:hover {
+            @include button-hover;
+        }
+
+        input.style {
+            width: 100%;
+            height: 50px;
+            border-radius: 3px;
+            border: solid 1px transparent;
+        }
+
+        input[placeholder], textarea[placeholder] {
+            text-transform: uppercase;
+            padding: 10px;
+            font-size: 10px;
+            color: $additional-font-color;
+        }
+
+        textarea {
+            width: 100%;
+            height: 180px;
+            border: solid 1px transparent;
+            border-radius: 3px;
+        }
+    }
+}
